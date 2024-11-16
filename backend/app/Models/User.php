@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'profile_pic'
     ];
 
     /**
@@ -47,9 +48,7 @@ class User extends Authenticatable
     }
 
     /**
-     * Get all comments written by the user.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\App\Models\Comment>
+     * Get the comments for the user.
      */
     public function comments(): HasMany
     {

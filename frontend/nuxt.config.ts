@@ -6,7 +6,13 @@ export default defineNuxtConfig({
       apiBase: process.env.API_BASE_URL,
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxt/image"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "shadcn-nuxt",
+    "@nuxt/image",
+    "@nuxt/icon",
+    "@nuxtjs/color-mode",
+  ],
   shadcn: {
     /**
      * Prefix for all the imported component

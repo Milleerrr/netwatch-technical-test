@@ -4,48 +4,31 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Comment extends Model
 {
-    
     use HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-    protected $fillable = ['comment_text', 'user_id'];
+    protected $fillable = [
+        'content',
+        'user_id',
+        'media_id',
+        'likes',
+    ];
 
     /**
-     * Get the user who wrote the comment.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<User>
+     * Get the user that owns the comment.
      */
-    public function user(): BelongsTo
+    public function user()
     {
         return $this->belongsTo(User::class);
     }
 
     /**
-     * Get the TV shows this comment belongs to.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<TVShow>
+     * Get the media that the comment belongs to.
      */
-    public function tvShows(): BelongsToMany
+    public function media()
     {
-        return $this->belongsToMany(TVShow::class, 'tv_show_comment');
-    }
-
-    /**
-     * Get the movies this comment belongs to.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<Movie>
-     */
-    public function movies(): BelongsToMany
-    {
-        return $this->belongsToMany(Movie::class, 'movie_comment');
+        return $this->belongsTo(Media::class);
     }
 }
