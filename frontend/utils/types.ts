@@ -1,21 +1,48 @@
-export interface Category {
+export interface Genre {
   id: number;
   name: string;
   created_at: string;
   updated_at: string;
   pivot?: {
-    movie_id: number;
-    category_id: number;
+    media_id: number;
+    genre_id: number;
   };
+}
+
+interface Comment {
+  id: number;
+  content: string;
+  user: {
+    id: number;
+    name: string;
+  };
+}
+
+
+export interface CastMember {
+  id: string;
+  movie_id: number;
+  name: string;
+  original_name: string;
+  popularity: string;
+  profile_path: string;
+  character: string;
+  created_at: string | null;
+  updated_at: string | null;
 }
 
 export interface MediaProps {
   id: number;
+  type: string;
   title: string;
-  description: string;
-  release_date: string;
+  overview: string;
+  popularity: number;
   image?: string;
-  categories?: Category[];
-  created_at?: string;
-  updated_at?: string;
+  comments?: Comment[];
+  vote_average: number;
+  vote_count: number;
+  cast: CastMember[];
+  created_at: string;
+  updated_at: string;
+  genres?: Genre[];
 }

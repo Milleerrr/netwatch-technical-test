@@ -13,30 +13,20 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-use App\Http\Controllers\TVShowController;
-use App\Http\Controllers\MovieController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\TVShowCommentController;
-use App\Http\Controllers\MovieCommentController;
+use App\Http\Controllers\MediaController;
+use App\Http\Controllers\GenreController;
+use App\Http\Controllers\CommentController;
 
-// Resource routes for TV Shows
-Route::resource('tv-shows', TVShowController::class);
+// Routes for the Media
+Route::apiResource('media', MediaController::class)->parameters([
+    'media' => 'movieId',
+]);
 
-// Resource routes for Movies
-Route::resource('movies', MovieController::class);
+// Routes for the Genres
+Route::apiResource('genres', GenreController::class);
 
-// Resource routes for Users
-Route::resource('users', UserController::class);
-
-// Resource routes for Categories
-Route::resource('categories', CategoryController::class);
-
-// Routes for TV Show Comments
-Route::resource('tv-shows.comments', TVShowCommentController::class)->shallow();
-
-// Routes for Movie Comments
-Route::resource('movies.comments', MovieCommentController::class)->shallow();
+// Routes for the Comments
+Route::apiResource('comments', CommentController::class);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

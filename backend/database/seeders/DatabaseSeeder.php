@@ -21,10 +21,10 @@ class DatabaseSeeder extends Seeder
         // ]);
         
         $this->call([
-            UserSeeder::class,
-            CategorySeeder::class,
-            TVShowSeeder::class,
-            MovieSeeder::class,
+            UsersTableSeeder::class,
+            GenresTableSeeder::class,
+            MediaTableSeeder::class,
+            CommentsTableSeeder::class,
         ]);
     }
 }
