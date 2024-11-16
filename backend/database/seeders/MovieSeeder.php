@@ -16,8 +16,8 @@ class MovieSeeder extends Seeder
     public function run()
     {
         Movie::factory(5)->create()->each(function ($movie) {
-            // Assign 3 random categories
-            $categories = Category::inRandomOrder()->take(3)->pluck('id');
+            // Assign 1 random category
+            $categories = Category::inRandomOrder()->take(1)->pluck('id');
             $movie->categories()->attach($categories);
 
             // Create and link 5 comments to the movie

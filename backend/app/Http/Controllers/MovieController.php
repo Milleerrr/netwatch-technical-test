@@ -80,14 +80,10 @@ class MovieController extends Controller
             'title' => 'required|string|max:255',
             'description' => 'required|string',
             'release_date' => 'required|date',
-            'categories' => 'array|required', // Expect an array of category IDs
         ]);
 
         // Update the movie
         $movie->update($validated);
-
-        // Sync categories with the movie
-        $movie->categories()->sync($validated['categories']);
 
         // Return the updated movie
         return response()->json($movie);

@@ -16,8 +16,8 @@ class TVShowSeeder extends Seeder
     public function run()
     {
         TVShow::factory(5)->create()->each(function ($tvShow) {
-            // Assign 3 random categories
-            $categories = Category::inRandomOrder()->take(3)->pluck('id');
+            // Assign 1 random category
+            $categories = Category::inRandomOrder()->take(1)->pluck('id');
             $tvShow->categories()->attach($categories);
 
             // Create and link 5 comments to the TV show

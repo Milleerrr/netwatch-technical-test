@@ -12,6 +12,7 @@
 */
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 use App\Http\Controllers\TVShowController;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\UserController;
@@ -36,3 +37,7 @@ Route::resource('tv-shows.comments', TVShowCommentController::class)->shallow();
 
 // Routes for Movie Comments
 Route::resource('movies.comments', MovieCommentController::class)->shallow();
+
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
+});

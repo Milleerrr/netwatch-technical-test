@@ -5,7 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class TVShow extends Model
 {
@@ -28,11 +27,11 @@ class TVShow extends Model
     /**
      * Get the comments for this TV show.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function comments(): HasMany
+    public function comments(): BelongsToMany
     {
-        return $this->hasMany(Comment::class, 'tv_show_id');
+        return $this->belongsToMany(Comment::class, 'tv_show_comment', 'tv_show_id', 'comment_id');
     }
 
     /**
