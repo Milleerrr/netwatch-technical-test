@@ -79,7 +79,7 @@ I used online Dummy JSON websites to fetch and insert data in the database
 I used this website -> https://jsonfakery.com
 
 ### Comments
-I used this website -> [https://jsonfakery.com](https://dummyjson.com/docs/comments)
+I used this website -> https://dummyjson.com/docs/comments
 
 
 ## Images
