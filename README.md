@@ -63,3 +63,9 @@ Create a simple application using **Laravel** that provides a list of TV shows a
 
 ## Seeding
 I used online Dummy JSON websites to fetch and insert data in the database
+
+### Movies/Shows/Users
+I used this website -> https://jsonfakery.com
+
+### Comments
+I used this website -> [https://jsonfakery.com](https://dummyjson.com/docs/comments)
