@@ -8,7 +8,12 @@ A simple application using Laravel that provides a list of TV shows and movies.
   - [Data Generation](#data-generation)
   - [Frontend](#frontend)
   - [Testing](#testing)
-- [Techstack][#techstack]
+- [Techstack](#techstack)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+  - [Database](#database)
+  - [Testing](#testing)
+- [Seeding](#seeding)
 
 # Objective
 The goal of this challenge is to give you a chance to showcase your coding style and how you structure your work. Don't worry about making it perfect or fully polished—it's more about getting a feel for how you solve problems and build out features.
@@ -48,6 +53,13 @@ Create a simple application using **Laravel** that provides a list of TV shows a
 
 ### Database
 - SQLite
+- Entity Relationship Diagram:
+   
+![ERD Diagram](https://github.com/user-attachments/assets/b7fb27e9-411d-4802-aad7-1e144b524af7)
+
 
 ### Testing
 - **Pest** tests for both the TV shows and movies pages.
+
+## Seeding
+I used online Dummy JSON websites to fetch and insert data in the database
