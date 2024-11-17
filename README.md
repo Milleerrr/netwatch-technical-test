@@ -71,7 +71,7 @@ Create a simple application using **Laravel** that provides a list of TV shows a
 
 
 ### Testing
-- **Pest** tests for both the TV shows and movies pages.
+- **PHPUnit** tests was used for both the TV shows and movies pages.
 
 ## Seeding
 I used online Dummy JSON websites to fetch and insert data in the database
