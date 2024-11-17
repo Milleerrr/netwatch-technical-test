@@ -21,6 +21,10 @@ A simple application using Laravel that provides a list of TV shows and movies.
    - [Filtered](#filtered)
    - [Movie](#movie)
    - [Show](#show)
+- [Responsiveness](#responsiveness)
+
+
+
 
 # Objective
 The goal of this challenge is to give you a chance to showcase your coding style and how you structure your work. Don't worry about making it perfect or fully polished—it's more about getting a feel for how you solve problems and build out features.
@@ -102,6 +106,9 @@ Showcasing the when selecting a Show from the list.
 
 <img width="1676" alt="image" src="https://github.com/user-attachments/assets/5e159f9a-e8ce-4e25-bcb1-acab5dd8a5fb">
 <img width="1674" alt="image" src="https://github.com/user-attachments/assets/ae823cd4-b703-4200-8d50-a0a807067901">
+
+## Responsiveness
+I considered making the website respond well on all devides from phones to deskstop size screens.
 
 
 
