@@ -12,9 +12,12 @@ export interface Genre {
 interface Comment {
   id: number;
   content: string;
+  likes: number;
+  created_at: string;
   user: {
     id: number;
     name: string;
+    profile_pic: string;
   };
 }
 
@@ -38,7 +41,7 @@ export interface MediaProps {
   overview: string;
   popularity: number;
   image?: string;
-  comments?: Comment[];
+  latest_comments?: Comment[];
   vote_average: number;
   vote_count: number;
   cast: CastMember[];

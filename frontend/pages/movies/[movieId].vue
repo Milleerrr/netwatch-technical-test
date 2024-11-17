@@ -76,7 +76,7 @@
 
         <!-- Comments Section -->
         <div v-if="movie?.latest_comments && movie?.latest_comments.length"
-            class="mt-10 bg-white p-6 rounded-lg shadow-md">
+            class="mt-20 bg-white p-6 rounded-lg shadow-md">
             <h2 class="text-2xl font-semibold mb-4 text-gray-800">Comments</h2>
             <ul class="space-y-6">
                 <li v-for="comment in movie?.latest_comments" :key="comment.id" class="border-b border-gray-200 pb-4">

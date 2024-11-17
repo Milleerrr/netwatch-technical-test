@@ -19,7 +19,7 @@ use App\Http\Controllers\CommentController;
 
 // Routes for the Media
 Route::apiResource('media', MediaController::class)->parameters([
-    'media' => 'movieId',
+    'media' => 'movieId', 'showId',
 ]);
 
 // Routes for the Genres
