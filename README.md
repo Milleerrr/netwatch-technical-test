@@ -8,6 +8,7 @@ A simple application using Laravel that provides a list of TV shows and movies.
   - [Data Generation](#data-generation)
   - [Frontend](#frontend)
   - [Testing](#testing)
+- [Assumptions](#assumptions)
 - [Techstack](#techstack)
   - [Frontend](#frontend)
   - [Backend](#backend)
@@ -51,6 +52,11 @@ Create a simple application using **Laravel** that provides a list of TV shows a
 
 ### Testing
 - Include **PHPUnit** or **Pest** tests for both the TV shows and movies pages.
+
+## Assumptions
+Ideally, this application would include a login page with proper authentication. To achieve this, I would use Laravel Socialite, which enables users to log in using OAuth providers such as Facebook or Google. The backend would require two routes: one to redirect the user to the OAuth provider for authentication, and another to handle the callback, receiving the user’s information upon successful login.
+
+Another assumption I made is that users should not have the ability to create, delete, or update movies and TV shows. But users can browse a catalog of media items where they can view, comment on, and like other users' comments. However, I chose not to implement the functionality for users to add or like comments, as this falls outside the scope of this technical test.
 
 
 ## Techstack
