@@ -17,10 +17,10 @@ A simple application using Laravel that provides a list of TV shows and movies.
    - [Movies/Shows/Users](#moviesshowsusers)
    - [Comments](#comments)
 - [Images](#images)
- - [Homepage](#homepage)
- - [Filtered](#filtered)
- - [Movie](#movie)
- - [Show](#show)
+   - [Homepage](#homepage)
+   - [Filtered](#filtered)
+   - [Movie](#movie)
+   - [Show](#show)
 
 # Objective
 The goal of this challenge is to give you a chance to showcase your coding style and how you structure your work. Don't worry about making it perfect or fully polished—it's more about getting a feel for how you solve problems and build out features.
