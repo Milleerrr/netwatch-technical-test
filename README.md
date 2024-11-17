@@ -16,6 +16,11 @@ A simple application using Laravel that provides a list of TV shows and movies.
 - [Seeding](#seeding)
    - [Movies/Shows/Users](#moviesshowsusers)
    - [Comments](#comments)
+- [Images](#images)
+ - [Homepage](#homepage)
+ - [Filtered](#filtered)
+ - [Movie](#movie)
+ - [Show](#show)
 
 # Objective
 The goal of this challenge is to give you a chance to showcase your coding style and how you structure your work. Don't worry about making it perfect or fully polished—it's more about getting a feel for how you solve problems and build out features.
@@ -71,3 +76,34 @@ I used this website -> https://jsonfakery.com
 
 ### Comments
 I used this website -> [https://jsonfakery.com](https://dummyjson.com/docs/comments)
+
+
+## Images
+Here are some images of the website in action!
+
+### Homepage
+The All, Movies, TV SHows all show similar views. The All shows all Media where as Movies/TV Shows show just the respsective type.
+
+<img width="1680" alt="overview" src="https://github.com/user-attachments/assets/cfe6a2ec-5062-4cc9-9a00-7bbdbd1ca655">
+
+### Filtered
+Showcasing the view list when a filter is selected.
+
+<img width="1678" alt="image" src="https://github.com/user-attachments/assets/ca8e0f75-0b44-4d97-96ce-c2dce24bd0f7">
+
+### Movie
+Showcasing the when selecting a Movie from the list.
+
+<img width="1672" alt="image" src="https://github.com/user-attachments/assets/e0347571-4b35-40da-ab90-c02b66da0267">
+<img width="1680" alt="image" src="https://github.com/user-attachments/assets/21dc8d8f-daa5-431e-8b3b-645430b0da35">
+
+### Show
+Showcasing the when selecting a Show from the list.
+
+<img width="1676" alt="image" src="https://github.com/user-attachments/assets/5e159f9a-e8ce-4e25-bcb1-acab5dd8a5fb">
+<img width="1674" alt="image" src="https://github.com/user-attachments/assets/ae823cd4-b703-4200-8d50-a0a807067901">
+
+
+
+
+
