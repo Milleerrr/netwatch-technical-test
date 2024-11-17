@@ -63,10 +63,10 @@ class MediaController extends Controller
     /**
      * Display the specified media item.
      */
-    public function show(Media $movieId)
+    public function show(Media $mediaId)
     {
-        $movieId->load(['genres', 'latestComments.user']);
-        return response()->json($movieId);
+        $mediaId->load(['genres', 'latestComments.user']);
+        return response()->json($mediaId);
     }
 
     /**

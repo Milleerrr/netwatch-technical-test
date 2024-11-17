@@ -49,3 +49,10 @@ export interface MediaProps {
   updated_at: string;
   genres?: Genre[];
 }
+
+
+export interface TabProps {
+  text: string,
+  to: string,
+  value: number,
+}

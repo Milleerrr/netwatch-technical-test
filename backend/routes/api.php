@@ -19,14 +19,9 @@ use App\Http\Controllers\CommentController;
 
 // Routes for the Media
 Route::apiResource('media', MediaController::class)->parameters([
-    'media' => 'movieId', 'showId',
+    'media' => 'mediaId',
 ]);
 
-// Routes for the Genres
-Route::apiResource('genres', GenreController::class);
-
-// Routes for the Comments
-Route::apiResource('comments', CommentController::class);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
